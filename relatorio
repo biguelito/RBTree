@@ -1,0 +1,26 @@
+A classe Node é o no da arvore possui:
+- um construtor, que recebe os parametros self, data(o valor do no) e a cor(se nao passada será None).
+  e cria o no tendo os atributos pai, filho a esquerda e filho a direita como None e atribui o valor do no e a cor dele
+- um metodo __str__ pra printar o valor numerico do no
+  
+A classe Binarytree é a propria arvore, e possui:
+- um construtor, que cria a raiz da arvore como uma raiz vazia, que é substituida apos adcionar o primeiro no
+- metodo inorder é o metodo que printa a arvore pelo valor de cada nó, ou seja, em ordem numerica
+- metodo search é o metodo que recebe o valor numerico e retorna o no com aquele valor, ou None, caso es
+- metodo minimum é o metodo que percorre a arvore pela esquerda, até chegar no menor nó
+- metodo maximum é o metodo que percorre a arvore pela direita, até chegar no maior nó
+- metodo insert é o metodo que insere o valor: Na raiz, caso a arvore seja vazia, com um nó vazio como pai
+                                             : na posiçao dele, com seus nos filhos como nós vazios
+- metodo insert_fix é o metodo que corrige a arvore apos a inserçao do nó, verificando as cores dos ancestrais apos ser inserido
+- metodo succesor é o metodo que busca o no do valor passado e retorna o proximo no em ordem numerica, verificando se ele está
+  na subarvore direita ou em outra posicao
+- metodo predecessor é o metodo que busca o no do valor passado e retonar o no anterior em ordem numerica, verificando se ele está na 
+  subarvore esquerda ou em outra posiçao
+- metodo trasnplant é o metodo que recebe x e y e liga o pai de x com y, tirando o x dessa ligaçao
+- metodo remove é o metodo que remove um nó da arvore
+- metodo delete_fix é o metodo que corrige a arvore apos a remoçao do nó, verificando as cores dos ancestrais apos inserido
+- metodo r_rotate e l_rotate sao os metodos que fazerm a rotaçao do no passado com seu respectivo filho
+
+O codigo apos isso possui um menu basico para que o usuario realize as operaçoes.
+
+Gabriel Reis
